@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    background-color: #FDD2BF;
+    height: 1300px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 55px;
+}
+
+.turn-who {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 299px;
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 4px;
+    transition: all 200ms;
+}
+
+.container div:nth-of-type(1) {
+    border-top-left-radius: 4px;
+}
+
+.container div:nth-of-type(3) {
+    border-top-right-radius: 4px;
+}
+
+.container div:nth-of-type(7) {
+    border-bottom-left-radius: 4px;
+}
+
+.container div:nth-of-type(9) {
+    border-bottom-right-radius: 4px;
+}
+
+.xox-section {
+    background-color: white;
+    width: 100px;
+    height: 99px;
+    border: 1px solid black;
+    transition: all 150ms;
+    position: relative;
+    padding-top: 11px;
+    text-align: center;
+    font-size: 60px;
+    color: #012443;
+}
+
+.xox-section:hover {
+    background-color: rgba(246, 246, 246, 0.8);
+    cursor: pointer;
+}
+
+.game-over {
+    padding: 20px;
+    border-radius: 9px;
+    background-color: #243a4d;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -28%);
+    width: 400px;
+    height: 200px;
+    opacity: 1;
+    z-index: 123;
+    display: none;
+}
+
+.gameover-text {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 18px;
+    color: white;
+}
+
+.winner {}
+
+.play-again {
+    background-color: transparent;
+    border: none;
+    border: 2px solid white;
+    padding: 10px 15px;
+    position: relative;
+    margin-top: 13px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    border-radius: 20px;
+    transition: 200ms all;
+}
+
+.play-again:hover {
+    background-color: white;
+    color: #243a4d;
+    cursor: pointer;
+}
+
+.start-game {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: transparent;
+    outline: none;
+    padding: 10px 25px;
+    margin-top: 30px;
+    border: 1px solid #012443;
+    transition: all 200ms;
+}
+
+.start-game:hover {
+    color: white;
+    background-color: #012443;
+    cursor: pointer;
+}
