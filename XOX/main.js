@@ -38,7 +38,6 @@ startBtn.addEventListener("click", () => {
                             bolum++;
                         }
                     }
-
                     x1 = container.children[0].innerHTML;
                     x2 = container.children[1].innerHTML;
                     x3 = container.children[2].innerHTML;
@@ -128,26 +127,13 @@ startBtn.addEventListener("click", () => {
                         winner.innerHTML = "Berabere";
                     }
                 }
-
-
-
-
-
-
             })
         }
-
-
-
     }
-
 });
 playAgain.addEventListener("click", () => {
-    console.log(started);
     bolum = 0;
-    console.log(bolum);
     started = false;
-    console.log(started);
     playAgain.style.display = "none";
     winner.innerHTML = "";
     for (item of container.children) {
